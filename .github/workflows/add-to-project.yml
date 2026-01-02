@@ -1,0 +1,20 @@
+name: Add Issues to Project
+
+on:
+  issues:
+    types: [opened, labeled, reopened]
+
+permissions:
+  contents: read
+  issues: read
+  repository-projects: write
+
+jobs:
+  add-to-project:
+    uses: tsuyoshi-labs/.github/.github/workflows/add-to-project.yml@main
+    with:
+      project-url: https://github.com/users/tsuyoshi-labs/projects/4
+      labeled: 'goal, epic, task'
+      label-operator: OR
+    secrets:
+      ADD_TO_PROJECT_PAT: ${{ secrets.ADD_TO_PROJECT_PAT }}
