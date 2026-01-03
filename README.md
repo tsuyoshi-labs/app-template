@@ -17,10 +17,10 @@ cd YOUR-NEW-REPO
 
 ### 2. 初期設定の自動化
 
-Workspace リポジトリで Claude Code を起動し、`/setup-new-app` skill を実行してください。
+新しく作成したリポジトリのディレクトリで Claude Code を起動し、`/setup-new-app` skill を実行してください。
 
 ```bash
-cd ../Workspace
+cd YOUR-NEW-REPO
 claude
 > /setup-new-app
 ```
