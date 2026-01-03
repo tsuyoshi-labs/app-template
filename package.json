@@ -4,8 +4,8 @@
   "description": "Template repository for new applications with task management integration",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "echo \"Error: no lint specified\" && exit 1",
+    "test": "echo \"No tests yet - add your tests here\" && exit 0",
+    "lint": "echo \"No linter configured yet - configure ESLint or similar\" && exit 0",
     "start": "node src/index.js"
   },
   "keywords": [
